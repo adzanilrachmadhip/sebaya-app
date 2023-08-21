@@ -7,12 +7,12 @@
 <!-- ======= Breadcrumbs ======= -->
 <section id="breadcrumbs" class="breadcrumbs">
   <div class="container">
-  
+
     <ol>
       <li><a href="/">Home</a></li>
-      <li>Peta All In One</li>
+      <li>Peta Rekreasi Sentimen Negatif</li>
     </ol>
-    <h2>Peta All In One</h2>
+    <h2>Peta Rekreasi Sentimen Negatif</h2>
 
   </div>
 </section><!-- End Breadcrumbs -->
@@ -120,6 +120,40 @@
 
       L.control.layers(baseLayers).addTo(map);
 
-   
+    // //History and Heritage  
+    // var pelabuhanrakyatkalimas = L.marker([-7.200714477824853, 112.7354013418574]).bindPopup('Nama Obyek Wisata : Pelabuhan Rakyat Kalimas'),masjidmuhammadchenghoo = L.marker([-7.2517978635279885, 112.74683205535217]).bindPopup('Nama Obyek Wisata : Masjid Muhammad Cheng Hoo');
+    
+    // //Museum
+    // var museumpendidikandokter = L.marker([-7.265307811644272, 112.75972756884681]).bindPopup('Nama Obyek Wisata : Museum Pendidikan Dokter'),monumenkapalselam = L.marker([-7.265494250905332, 112.75026228234131]).bindPopup('Nama Obyek Wisata : Monumen Kapal Selam');
+
+    // // //Religion
+    // var masjidnasionalalakbar = L.marker([-7.336422556671241, 112.7152020553528]).bindPopup('Nama Obyek Wisata : Masjid Agung Nasional Al-Akbar'),gerejagrahabethany = L.marker([-7.306774985664184, 112.77239881117677]).bindPopup('Nama Obyek Wisata : Masjid Agung Nasional Al-Akbar');
+
+    // // //Culinary
+    // var swkpenjaringansari = L.marker([-7.287216735597925, 112.73108471117655]).bindPopup('Nama Obyek Wisata : SWK Penjaringansari'),loopgrahafestival = L.marker([-7.320316449757917, 112.73254809768233]).bindPopup('Nama Obyek Wisata : LOOP Graha Festival');
+    
+    // // //sport 
+    // var gelorapancasila = L.marker([-7.287216735597925, 112.73108471117655]).bindPopup('Nama Obyek Wisata : Gelora Pancasila'),dblarena = L.marker([-7.320316449757917, 112.73254809768233]).bindPopup('Nama Obyek Wisata :DBL Arena');
+
+    // var history = L.layerGroup([pelabuhanrakyatkalimas, masjidmuhammadchenghoo]);
+    // var museum = L.layerGroup([museumpendidikandokter, monumenkapalselam]);
+    // var religion = L.layerGroup([masjidnasionalalakbar, gerejagrahabethany]);
+    // var culinary = L.layerGroup([swkpenjaringansari, loopgrahafestival]);
+    // var sport = L.layerGroup([gelorapancasila, dblarena]);
+
+    //   var overlayMaps = {
+    //     "History & Heritage": history
+    //   };
+
+    //   var baseLayers = {
+    //     "OSM": osm
+    //   };
+
+    //   L.control.layers(baseLayers, overlayMaps, {
+    //     collapsed: true
+    //   }).addTo(map);
+
+    //   layerControl.addOverlay("Museum",museum);
+
   </script>
 @endsection

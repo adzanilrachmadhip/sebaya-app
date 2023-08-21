@@ -24,3 +24,23 @@ Route::get('/petaaio', function () {
         "title" => "Peta All In One"
     ]);
 });
+
+Route::get('/petapositif', function () {
+    return view('petapositif',[
+        "title" => "Peta Positif "
+    ]);
+});
+
+Route::get('/petanegatif', function () {
+    return view('petanegatif',[
+        "title" => "Peta Negatif"
+    ]);
+});
+
+// Roles: Admin Routes
+
+Route::get('/dashboard', function () {
+    return view('admin.dashboard',[
+        "title" => "Sebaya-App | Admin Dashboard"
+    ]);
+});

@@ -62,8 +62,8 @@
           <li class="dropdown"><a href="#"><span>Visualisasi Data</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="/petaaio">Peta All in One</a></li>
-              <li><a href="petapositif.html">Peta Sentimen Positif</a></li>
-              <li><a href="petanegatif.html">Peta Sentimen Negatif</a></li>
+              <li><a href="/petapositif">Peta Sentimen Positif</a></li>
+              <li><a href="/petanegatif">Peta Sentimen Negatif</a></li>
               <li class="dropdown"><a href="#"><span>Data Tempat Wisata</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
                   <li><a href="#">Tabel</a></li>
@@ -97,7 +97,6 @@
         </div>
       </div>
     </div>
-
     <div class="footer-top">
       <div class="container">
         <div class="row">
@@ -105,11 +104,11 @@
           <div class="col-lg-3 col-md-6 footer-contact">
             <h3>SEBAYA</h3>
             <p>
-              A108 Adam Street <br>
-              New York, NY 535022<br>
-              United States <br><br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
+              Jl. Ketintang 156, Kec. Gayungan <br>
+              Kota Surabaya, 60231<br>
+              <br><br>
+              <strong>Phone:</strong> (+6231) 8280800<br>
+              <strong>Email:</strong> is@ittelkom-sby.ac.id<br>
             </p>
           </div>
 
@@ -153,7 +152,7 @@
 
     <div class="container footer-bottom clearfix">
       <div class="copyright">
-        &copy; Copyright 2023 <strong><span>Prodi SI IT Teklkom Surabaya</span></strong>. All Rights Reserved
+        &copy; Copyright 2023 <strong><span>Sistem Informasi IT Telkom Surabaya</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
