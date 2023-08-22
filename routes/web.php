@@ -13,6 +13,35 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// auth route here 
+
+Route::get('/login', function () {
+    return view('auth.login',[
+        "title" => "Login"
+    ]);
+});
+
+Route::get('/daftar', function () {
+    return view('auth.daftar',[
+        "title" => "Daftar"
+    ]);
+});
+
+
+Route::get('/lupa', function () {
+    return view('auth.lupa',[
+        "title" => "Reset Password"
+    ]);
+});
+
+Route::get('/resetsukses', function () {
+    return view('auth.resetsukses',[
+        "title" => "Reset Password"
+    ]);
+});
+
+
+
 Route::get('/', function () {
     return view('beranda',[
         "title" => "Home"
