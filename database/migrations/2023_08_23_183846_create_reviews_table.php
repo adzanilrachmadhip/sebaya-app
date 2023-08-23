@@ -11,23 +11,24 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('reviews', function (Blueprint $table) {
             // Primary Key
-            $table->bigIncrements('id_user');
+            $table->bigIncrements('id_review');
 
             // Foreign Key
-            $table->unsignedBigInteger('role_id');
+            $table->unsignedBigInteger('id_places');
+            $table->unsignedBigInteger('id_risk');
+            $table->unsignedBigInteger('inputed_by');
 
             // Content
-            $table->string('username');
-            $table->string('email')->unique();
-            $table->string('password');
             $table->dateTime('created_at');
             $table->timestamp('update_at');
             $table->integer('is_deleted');
 
             // Relation
-            $table->foreign('role_id')->references('id_role')->on('roles');
+            $table->foreign('id_places')->references('id_places')->on('places');
+            $table->foreign('id_risk')->references('id_risk')->on('risks');
+            $table->foreign('inputed_by')->references('id_user')->on('users');
         });
     }
 
@@ -36,6 +37,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('reviews');
     }
 };

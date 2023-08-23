@@ -18,7 +18,7 @@ class User extends Authenticatable
      * @var array<int, string>
      */
     protected $fillable = [
-        'name',
+        'username',
         'email',
         'password',
     ];
@@ -42,4 +42,14 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+
+    public function role()
+    {
+        return $this->belongsTo('App\Models\Roles', 'role_id');
+    }
+
+    public function review()
+    {
+        return $this->hasMany('App\Models\Reviews', 'inputed_by');
+    }
 }
