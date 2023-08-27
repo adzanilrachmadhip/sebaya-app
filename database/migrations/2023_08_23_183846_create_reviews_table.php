@@ -22,13 +22,13 @@ return new class extends Migration
 
             // Content
             $table->dateTime('created_at');
-            $table->timestamp('update_at');
+            $table->timestamp('updated_at');
             $table->integer('is_deleted');
 
             // Relation
             $table->foreign('id_places')->references('id_places')->on('places');
             $table->foreign('id_risk')->references('id_risk')->on('risks');
-            $table->foreign('inputed_by')->references('id_user')->on('users');
+            $table->foreign('inputed_by')->references('id')->on('users');
         });
     }
 

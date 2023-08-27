@@ -21,7 +21,7 @@ return new class extends Migration
             // Content
             $table->string('word');
             $table->dateTime('created_at');
-            $table->timestamp('update_at');
+            $table->timestamp('updated_at');
             $table->integer('is_deleted');
 
             // Relation

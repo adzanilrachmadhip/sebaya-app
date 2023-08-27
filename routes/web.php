@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,32 +14,32 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// auth route here 
+// auth route here
 
-Route::get('/login', function () {
-    return view('auth.login',[
+Route::get('/loginbaru', function () {
+    return view('authentication.login',[
         "title" => "Login"
     ]);
 });
 
-Route::get('/daftar', function () {
-    return view('auth.daftar',[
-        "title" => "Daftar"
-    ]);
-});
+// Route::get('/daftar', function () {
+//     return view('auth.daftar',[
+//         "title" => "Daftar"
+//     ]);
+// });
 
 
-Route::get('/lupa', function () {
-    return view('auth.lupa',[
-        "title" => "Reset Password"
-    ]);
-});
+// Route::get('/lupa', function () {
+//     return view('auth.lupa',[
+//         "title" => "Reset Password"
+//     ]);
+// });
 
-Route::get('/resetsukses', function () {
-    return view('auth.resetsukses',[
-        "title" => "Reset Password"
-    ]);
-});
+// Route::get('/resetsukses', function () {
+//     return view('auth.resetsukses',[
+//         "title" => "Reset Password"
+//     ]);
+// });
 
 
 
@@ -73,3 +74,7 @@ Route::get('/dashboard', function () {
         "title" => "Sebaya-App | Admin Dashboard"
     ]);
 });
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

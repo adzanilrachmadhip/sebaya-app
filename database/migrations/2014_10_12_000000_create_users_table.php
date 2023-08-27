@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             // Primary Key
-            $table->bigIncrements('id_user');
+            $table->bigIncrements('id');
 
             // Foreign Key
             $table->unsignedBigInteger('role_id');
@@ -23,7 +23,7 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->string('password');
             $table->dateTime('created_at');
-            $table->timestamp('update_at');
+            $table->timestamp('updated_at');
             $table->integer('is_deleted');
 
             // Relation

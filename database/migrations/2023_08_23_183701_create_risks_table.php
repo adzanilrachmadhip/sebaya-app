@@ -18,7 +18,7 @@ return new class extends Migration
             // Content
             $table->string('risk_name');
             $table->dateTime('created_at');
-            $table->timestamp('update_at');
+            $table->timestamp('updated_at');
             $table->integer('is_deleted');
         });
     }

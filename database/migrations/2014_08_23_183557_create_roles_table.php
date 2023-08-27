@@ -16,9 +16,9 @@ return new class extends Migration
             $table->bigIncrements('id_role');
 
             // Content
-            $table->string('role_name');
+            $table->string('role_name')->unique();
             $table->dateTime('created_at');
-            $table->timestamp('update_at');
+            $table->timestamp('updated_at');
             $table->integer('is_deleted');
         });
     }
