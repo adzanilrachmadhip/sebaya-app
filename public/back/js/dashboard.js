@@ -37,11 +37,11 @@
       $('#audience-map').vectorMap({
         map: 'world_mill_en',
         backgroundColor: 'transparent',
-        panOnDrag: true,
+        panOnDrag: false,
         focusOn: {
           x: 0.5,
           y: 0.5,
-          scale: 1,
+          scale: 5,
           animate: true
         },
         series: {
@@ -50,7 +50,7 @@
             normalizeFunction: 'polynomial',
             values: {
 
-              "BZ": 75.00,
+              "BZ": 50.00,
               "US": 56.25,
               "AU": 15.45,
               "GB": 25.00,
@@ -83,7 +83,7 @@
           }
         },      
         legend: {
-          display: false
+          display: true
         },
         tooltips: {
           enabled: true

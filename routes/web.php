@@ -73,3 +73,15 @@ Route::get('/dashboard', function () {
         "title" => "Sebaya-App | Admin Dashboard"
     ]);
 });
+
+Route::get('/inputwisata', function () {
+    return view('admin.inputwisata',[
+        "title" => "Sebaya-App | Admin Input Wisata"
+    ]);
+});
+
+Route::get('/tabelwisata', function () {
+    return view('admin.tabelwisata',[
+        "title" => "Sebaya-App | Admin Input Wisata"
+    ]);
+});

@@ -5,21 +5,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- plugins:css -->
-    <link rel="stylesheet" href="lib/mdi/css/materialdesignicons.min.css">
-    <link rel="stylesheet" href="lib/css/vendor.bundle.base.css">
+    <link rel="stylesheet" href="{{ URL::to('/') }}/lib/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="{{ URL::to('/') }}/lib/css/vendor.bundle.base.css">
     <!-- endinject -->
     <!-- Plugin css for this page -->
-    <link rel="stylesheet" href="lib/jvectormap/jquery-jvectormap.css">
-    <link rel="stylesheet" href="lib/flag-icon-css/css/flag-icon.min.css">
-    <link rel="stylesheet" href="lib/owl-carousel-2/owl.carousel.min.css">
-    <link rel="stylesheet" href="lib/owl-carousel-2/owl.theme.default.min.css">
+    <link rel="stylesheet" href="{{ URL::to('/') }}/lib/jvectormap/jquery-jvectormap.css">
+    <link rel="stylesheet" href="{{ URL::to('/') }}/lib/flag-icon-css/css/flag-icon.min.css">
+    <link rel="stylesheet" href="{{ URL::to('/') }}/lib/owl-carousel-2/owl.carousel.min.css">
+    <link rel="stylesheet" href="{{ URL::to('/') }}/lib/owl-carousel-2/owl.theme.default.min.css">
     <!-- End plugin css for this page -->
     <!-- inject:css -->
     <!-- endinject -->
     <!-- Layout styles -->
-    <link rel="stylesheet" href="back/css/style.css">
+    <link rel="stylesheet" href="{{ URL::to('/') }}/back/css/style.css">
     <!-- End layout styles -->
-    <link rel="shortcut icon" href="back/images/favicon.png" />
+    <link rel="shortcut icon" href="{{ URL::to('/') }}/back/images/favicon.png" />
   </head>
   <body>
     <div class="container-scroller">
@@ -96,7 +96,7 @@
             </a>
           </li>
           <li class="nav-item menu-items">
-            <a class="nav-link" href="pages/forms/basic_elements.html">
+            <a class="nav-link" href="/inputwisata">
               <span class="menu-icon">
                 <i class="mdi mdi-playlist-play text-success"></i>
               </span>
@@ -104,7 +104,7 @@
             </a>
           </li>
           <li class="nav-item menu-items">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="/tabelwisata">
               <span class="menu-icon">
                 <i class="mdi mdi-table-large text-warning"></i>
               </span>
@@ -322,7 +322,7 @@
       <!-- partial:partials/_footer.html -->
       <footer class="footer">
             <div class="d-sm-flex justify-content-center justify-content-sm-between">
-              <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © bootstrapdash.com 2021</span>
+              <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © Prodi Sistem Informasi IT Telkom Surabaya</span>
               <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Free <a href="https://www.bootstrapdash.com/bootstrap-admin-template/" target="_blank">Bootstrap admin template</a> from Bootstrapdash.com</span>
             </div>
           </footer>
@@ -334,25 +334,25 @@
     </div>
     <!-- container-scroller -->
     <!-- plugins:js -->
-    <script src="lib/js/vendor.bundle.base.js"></script>
+    <script src="{{ URL::to('/') }}/lib/js/vendor.bundle.base.js"></script>
     <!-- endinject -->
     <!-- Plugin js for this page -->
-    <script src="lib/chart.js/Chart.min.js"></script>
-    <script src="lib/progressbar.js/progressbar.min.js"></script>
-    <script src="lib/jvectormap/jquery-jvectormap.min.js"></script>
-    <script src="lib/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
-    <script src="lib/owl-carousel-2/owl.carousel.min.js"></script>
-    <script src="back/js/jquery.cookie.js" type="text/javascript"></script>
+    <script src="{{ URL::to('/') }}/lib/chart.js/Chart.min.js"></script>
+    <script src="{{ URL::to('/') }}/lib/progressbar.js/progressbar.min.js"></script>
+    <script src="{{ URL::to('/') }}/lib/jvectormap/jquery-jvectormap.min.js"></script>
+    <script src="{{ URL::to('/') }}/lib/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+    <script src="{{ URL::to('/') }}/lib/owl-carousel-2/owl.carousel.min.js"></script>
+    <script src="{{ URL::to('/') }}/back/js/jquery.cookie.js" type="text/javascript"></script>
     <!-- End plugin js for this page -->
     <!-- inject:js -->
-    <script src="back/js/off-canvas.js"></script>
-    <script src="back/js/hoverable-collapse.js"></script>
-    <script src="back/js/misc.js"></script>
-    <script src="back/js/settings.js"></script>
-    <script src="back/js/todolist.js"></script>
+    <script src="{{ URL::to('/') }}/back/js/off-canvas.js"></script>
+    <script src="{{ URL::to('/') }}/back/js/hoverable-collapse.js"></script>
+    <script src="{{ URL::to('/') }}/back/js/misc.js"></script>
+    <script src="{{ URL::to('/') }}/back/js/settings.js"></script>
+    <script src="{{ URL::to('/') }}/back/js/todolist.js"></script>
     <!-- endinject -->
     <!-- Custom js for this page -->
-    <script src="back/js/dashboard.js"></script>
+    <script src="{{ URL::to('/') }}/back/js/dashboard.js"></script>
     <!-- End custom js for this page -->
   </body>
 </html>
