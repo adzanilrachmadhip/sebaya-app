@@ -85,3 +85,11 @@ Route::get('/tabelwisata', function () {
         "title" => "Sebaya-App | Admin Input Wisata"
     ]);
 });
+
+
+// Roles: Visitors
+Route::get('/review', function(){
+    return view('review', [
+        "title" => "Review Tempat Wisata"
+    ]);
+});
